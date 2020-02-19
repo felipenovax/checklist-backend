@@ -6,7 +6,7 @@ module.exports = function(server) {
     const router = express.Router()
     server.use('/api', router)
 
-    // TODO Routes
-    const todoService = require('../api/todo/todoService')
-    todoService.register(router, '/todos')
+    // CHECKLIST Routes
+    const checklistService = require('../api/checklist/checklistService')
+    checklistService.register(router, '/checklists')
 }
