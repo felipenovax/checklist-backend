@@ -17,7 +17,7 @@ const checklistSchema = new mongoose.Schema({
         lintValid: { type: Boolean, required: false, default: false },
         invision: { type: Boolean, required: false, default: false }
     },
-    databseList: {
+    databaseList: {
         adValid: { type: Boolean, required: false, default: false }
     },
     defaultList: {
