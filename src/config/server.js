@@ -10,7 +10,7 @@ server.use(bodyParser.json())
 server.use(allowCors)
 
 server.listen(port, function() {
-    console.log(`BACKEND is running on port ${port}.`)
+    console.log('\x1b[44m%s\x1b[0m', ` BACKEND RODANDO NA PORTA: ${port} `);  //cyan
 })
 
 module.exports = server

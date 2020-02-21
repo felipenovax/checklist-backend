@@ -3,7 +3,7 @@ const mongoose = restful.mongoose
 
 const checklistSchema = new mongoose.Schema({
     description: { type: String, required: true },
-    taskNumber: { type: String, required: true },
+    taskNumber: { type: String, required: true, unique: true },
     backend: { type: Boolean, required: true, default: false },
     frontend: { type: Boolean, required: true, default: false },
     database: { type: Boolean, required: true, default: false },
